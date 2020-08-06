@@ -153,9 +153,9 @@ FRC:
 .PHONY: clean cleanobj cleanexe
 clean: cleanobj cleanexe
 cleanobj:
-	rm -f *.o
+	$(DEL) *.o
 cleanexe:
-	rm -f xeigtst*
+	$(DEL) xeigtst*
 
 schkee.o: schkee.f
 	$(FC) $(FFLAGS_DRV) -c -o $@ $<

@@ -40,11 +40,11 @@ run: all
 .PHONY: clean cleanobj cleanexe cleantest
 clean: cleanobj cleanexe cleantest
 cleanobj:
-	rm -f *.o
+	$(DEL) *.o
 cleanexe:
-	rm -f test*
+	$(DEL) test*
 cleantest:
-	rm -f core
+	$(DEL) core
 
 slamch.o: slamch.f ; $(FC) $(FFLAGS_NOOPT) -c -o $@ $<
 dlamch.o: dlamch.f ; $(FC) $(FFLAGS_NOOPT) -c -o $@ $<

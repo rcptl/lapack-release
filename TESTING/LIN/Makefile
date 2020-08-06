@@ -309,13 +309,17 @@ $(ZLINTST): $(FRC)
 
 FRC:
 	@FRC=$(FRC)
+	
+.PHONY: tmglib
+tmglib:
+	$(MAKE) -C ../MATGEN
 
 .PHONY: clean cleanobj cleanexe
 clean: cleanobj cleanexe
 cleanobj:
-	rm -f *.o
+	$(DEL) *.o
 cleanexe:
-	rm -f xlintst*
+	$(DEL) xlintst*
 
 schkaa.o: schkaa.f
 	$(FC) $(FFLAGS_DRV) -c -o $@ $<

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="lapack" />
+		<Option makefile_is_custom="1" />
+		<Option execution_dir="D:/rusakov/models/next_develop/lapack/src" />
+		<Option pch_mode="2" />
+		<Option compiler="gfortran" />
+		<Build>
+			<Target title="all">
+				<Option output="../$(BINOUT)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../$(BINDIR)/obj/" />
+				<Option type="2" />
+				<Option compiler="gfortran" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="lib">
+				<Option output="lapack" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option type="2" />
+				<Option compiler="gfortran" />
+				<Option createDefFile="1" />
+			</Target>
+			<Target title="lapack_testing">
+				<Option output="lapack_testing" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gfortran" />
+				<Option use_console_runner="0" />
+			</Target>
+			<Target title="blaslib">
+				<Option output="lapack.sys" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option type="5" />
+				<Option compiler="gfortran" />
+			</Target>
+		</Build>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

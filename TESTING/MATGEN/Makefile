@@ -93,9 +93,9 @@ FRC:
 .PHONY: clean cleanobj cleanlib
 clean: cleanobj cleanlib
 cleanobj:
-	rm -f *.o
+	$(DEL) *.o
 cleanlib:
-	rm -f $(TMGLIB)
+	$(DEL) $(TMGLIB)
 
 slaran.o: slaran.f ; $(FC) $(FFLAGS_NOOPT) -c -o $@ $<
 dlaran.o: dlaran.f ; $(FC) $(FFLAGS_NOOPT) -c -o $@ $<
